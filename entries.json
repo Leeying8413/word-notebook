@@ -1,32 +1,27 @@
 {
-  "title": "詞彙收集簿",
+  "title": "聯盟青年衛隊貳拾伍宣言",
   "subtitle": "",
   "intro": "",
   "entries": [
     {
-      "src": "cards/sample-01.png",
-      "name": "範例",
-      "word": "黃昏"
+      "src": "cards/0-000.png",
+      "name": "角色名",
+      "word": "詞彙"
     },
     {
-      "src": "cards/sample-02.png",
-      "name": "範例",
-      "word": "木漏れ日"
+      "src": "cards/0-001.png",
+      "name": "角色名",
+      "word": "詞彙"
     },
     {
-      "src": "cards/sample-03.png",
-      "name": "範例",
-      "word": "saudade"
+      "src": "cards/0-002.png",
+      "name": "角色名",
+      "word": "詞彙"
     },
     {
-      "src": "cards/sample-04.png",
-      "name": "範例",
-      "word": "月光"
-    },
-    {
-      "src": "cards/sample-05.png",
-      "name": "範例",
-      "word": "petrichor"
+      "src": "cards/0-003.png",
+      "name": "角色名",
+      "word": "詞彙"
     }
   ]
 }

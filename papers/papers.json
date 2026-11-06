@@ -1,10 +1,10 @@
 [
   {
     "id": "pink",
-    "label": "粉色格紋",
+    "label": "粉色兔兔",
     "src": "papers/pink-grid.png",
     "left": 0,
-    "desc": "一張粉紅色的方格便條紙，角落還印著愛心。"
+    "desc": "紀念品店裡的可愛便條紙，在這裡賣得老貴了。"
   },
   {
     "id": "torn",
@@ -16,8 +16,15 @@
   {
     "id": "rose",
     "label": "馥郁玫瑰",
-    "src": "PinkGold.png",
+    "src": "papers/PinkGold.png",
     "left": 0,
     "desc": "如果你覺得這張紙聞起來香香的，那鐵定是某種幻覺。"
+  },
+  {
+    "id": "brown",
+    "label": "牛皮紙",
+    "src": "papers/BeigeBrown.png",
+    "left": 0,
+    "desc": "覺得自己不夠酷嗎？那鐵定是少了牛皮紙的勁爆質感！"
   }
 ]
