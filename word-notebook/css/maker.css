@@ -1,0 +1,309 @@
+:root {
+  --bg: #17151b;
+  --panel: #221f27;
+  --line: #3a3541;
+  --text: #ece5d8;
+  --muted: #a69d8f;
+  --accent: #c9a96a;
+  --paper: #f3ead6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Noto Serif TC", serif;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+.wrap {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 32px 16px 64px;
+}
+
+header {
+  margin-bottom: 28px;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 28px;
+  margin: 0 0 6px;
+  letter-spacing: .08em;
+}
+
+header p {
+  margin: 0;
+  color: var(--muted);
+}
+
+header a {
+  color: var(--accent);
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 340px 1fr;
+  gap: 28px;
+  align-items: start;
+}
+
+@media (max-width: 860px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .preview-col {
+    order: -1;
+  }
+}
+
+.panel {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.field {
+  margin-bottom: 16px;
+}
+
+.field:last-child {
+  margin-bottom: 0;
+}
+
+.lbl {
+  display: block;
+  font-size: 14px;
+  color: var(--muted);
+  margin-bottom: 6px;
+}
+
+.lbl small {
+  color: #7d7569;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 10px 12px;
+  font: inherit;
+  font-size: 16px;
+  color: var(--text);
+  background: #18161c;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+}
+
+input[type=text]:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.chip {
+  border: 1px solid var(--line);
+  background: #18161c;
+  color: var(--text);
+  padding: 7px 14px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.chip[aria-pressed=true] {
+  border-color: var(--accent);
+  background: #2e281f;
+  color: #f1dcae;
+}
+
+.chip .thumb {
+  display: inline-block;
+  width: 34px;
+  height: 20px;
+  margin-right: 8px;
+  vertical-align: -5px;
+  object-fit: contain;
+}
+
+.chip .dot {
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  margin-right: 6px;
+  vertical-align: -1px;
+}
+
+.preview-col {
+  position: sticky;
+  top: 16px;
+}
+
+@media (max-width: 860px) {
+  .preview-col {
+    position: static;
+  }
+}
+
+.canvas-box {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+}
+
+#card {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 600 / 350;
+  display: block;
+  border-radius: 3px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .45);
+  touch-action: auto;
+  cursor: default;
+}
+
+#card.drawing {
+  touch-action: none;
+  cursor: crosshair;
+  outline: 2px dashed var(--accent);
+  outline-offset: 4px;
+}
+
+.paper-desc {
+  color: var(--muted);
+  font-size: 14px;
+  margin: 10px 0 0;
+  max-width: 600px;
+  min-height: 1.6em;
+}
+
+.paper-desc:empty {
+  display: none;
+}
+
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin-top: 16px;
+  max-width: 600px;
+}
+
+.btn {
+  font: inherit;
+  font-size: 15px;
+  padding: 9px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  border: 1px solid var(--line);
+  background: var(--panel);
+  color: var(--text);
+}
+
+.btn:disabled {
+  opacity: .4;
+  cursor: default;
+}
+
+.btn.primary {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #1c170f;
+  font-weight: 600;
+}
+
+.btn.on {
+  border-color: var(--accent);
+  color: #f1dcae;
+  background: #2e281f;
+}
+
+.pen-tools {
+  display: none;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.pen-tools.show {
+  display: flex;
+}
+
+.pen-tools input[type=range] {
+  width: 110px;
+  accent-color: var(--accent);
+}
+
+.hint {
+  color: var(--muted);
+  font-size: 14px;
+  margin: 10px 0 0;
+  max-width: 600px;
+}
+
+.result {
+  margin-top: 24px;
+  max-width: 600px;
+  display: none;
+}
+
+.result.show {
+  display: block;
+}
+
+.result img {
+  width: 100%;
+  display: block;
+  border-radius: 3px;
+}
+
+.result p {
+  color: var(--muted);
+  font-size: 14px;
+  margin: 8px 0 0;
+}
+
+.howto {
+  margin-top: 48px;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+  max-width: 680px;
+}
+
+.howto h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0 0 12px;
+  letter-spacing: .06em;
+}
+
+.howto ol {
+  margin: 0;
+  padding-left: 1.4em;
+  color: var(--text);
+}
+
+.howto li {
+  margin-bottom: 8px;
+}
+
+.howto a {
+  color: var(--accent);
+}

@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>我在尋找字</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC&family=Noto+Sans+TC:wght@500&family=Noto+Serif+TC:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/maker.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <h1>美麗的詞彙</h1>
+        <p>
+          一本封面磨損的舊筆記本，被遺落在樂園某處的長椅上。翻開來，裡面工整地貼著一張張紙片，每一張都只寫著一個詞。
+        </p>
+        <p><a href="book.html">翻閱收集簿 →</a></p>
+      </header>
+
+      <div class="layout">
+        <div class="panel">
+          <div class="field">
+            <label class="lbl" for="name">署名</label>
+            <input type="text" id="name" maxlength="24" autocomplete="off" />
+          </div>
+          <div class="field">
+            <label class="lbl" for="town">城鎮編號</label>
+            <input
+              type="text"
+              id="town"
+              maxlength="16"
+              autocomplete="off"
+              placeholder="例如 I003"
+            />
+          </div>
+          <div class="field">
+            <label class="lbl" for="word"
+              >詞彙 <small>（想用手寫的話可以留空）</small></label
+            >
+            <input type="text" id="word" maxlength="40" autocomplete="off" />
+          </div>
+          <div class="field">
+            <label class="lbl" for="reading"
+              >讀音 <small>（選填，會放在詞彙上方）</small></label
+            >
+            <input type="text" id="reading" maxlength="40" autocomplete="off" />
+          </div>
+          <div class="field">
+            <label class="lbl" for="meaning"
+              >辭義 <small>（選填，會放在詞彙下方）</small></label
+            >
+            <input type="text" id="meaning" maxlength="60" autocomplete="off" />
+          </div>
+          <div class="field">
+            <span class="lbl">紙張</span>
+            <div class="chips" id="papers"></div>
+          </div>
+          <div class="field">
+            <span class="lbl">字體</span>
+            <div class="chips" id="fonts"></div>
+          </div>
+          <div class="field">
+            <span class="lbl">墨水</span>
+            <div class="chips" id="inks"></div>
+          </div>
+        </div>
+
+        <div class="preview-col">
+          <div class="canvas-box">
+            <canvas
+              id="card"
+              width="1200"
+              height="700"
+              aria-label="詞彙卡預覽"
+            ></canvas>
+          </div>
+          <p class="paper-desc" id="paperDesc"></p>
+          <div class="toolbar">
+            <button class="btn" id="drawToggle" type="button">✎ 手寫</button>
+            <div class="pen-tools" id="penTools">
+              <label class="lbl" for="penSize" style="margin: 0">筆粗</label>
+              <input
+                type="range"
+                id="penSize"
+                min="1"
+                max="8"
+                step="0.5"
+                value="3"
+              />
+              <button class="btn" id="undo" type="button">復原</button>
+              <button class="btn" id="clearInk" type="button">清除手寫</button>
+            </div>
+            <button
+              class="btn primary"
+              id="save"
+              type="button"
+              style="margin-left: auto"
+            >
+              存下圖片
+            </button>
+          </div>
+          <p class="hint" id="drawHint" hidden>
+            手寫模式中：直接在卡片上寫字。寫完再按一次「手寫」就能恢復捲動頁面。
+          </p>
+          <div class="result" id="result">
+            <img id="resultImg" alt="完成的詞彙卡" />
+            <p>如果沒有自動下載，請長按圖片、右鍵另存或原地哭泣。</p>
+          </div>
+        </div>
+      </div>
+
+      <section class="howto">
+        <h2>怎麼參加</h2>
+        <ol>
+          <li>
+            寫下一個在你的語言裡（請以OC的母語、擅長語言為主），美麗、酷炫或您角色喜愛的詞彙。可以打字，也可以按「手寫」現場揮毫。
+          </li>
+          <li>署名和城鎮編號；讀音和辭義都可以不填。</li>
+          <li>按「存下圖片」，把你覺得美麗的詞彙貼給19叔欣賞吧！</li>
+          <li>收到的紙片會陸續貼進<a href="book.html">收集簿</a>裡。</li>
+        </ol>
+      </section>
+    </div>
+
+    <script src="js/maker.js"></script>
+  </body>
+</html>

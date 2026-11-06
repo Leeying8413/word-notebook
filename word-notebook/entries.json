@@ -1,0 +1,32 @@
+{
+  "title": "詞彙收集簿",
+  "subtitle": "",
+  "intro": "",
+  "entries": [
+    {
+      "src": "cards/sample-01.png",
+      "name": "範例",
+      "word": "黃昏"
+    },
+    {
+      "src": "cards/sample-02.png",
+      "name": "範例",
+      "word": "木漏れ日"
+    },
+    {
+      "src": "cards/sample-03.png",
+      "name": "範例",
+      "word": "saudade"
+    },
+    {
+      "src": "cards/sample-04.png",
+      "name": "範例",
+      "word": "月光"
+    },
+    {
+      "src": "cards/sample-05.png",
+      "name": "範例",
+      "word": "petrichor"
+    }
+  ]
+}
