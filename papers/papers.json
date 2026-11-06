@@ -18,7 +18,7 @@
     "label": "馥郁玫瑰",
     "src": "papers/PinkGold.png",
     "left": 0,
-    "desc": "如果你覺得這張紙聞起來香香的，那鐵定是某種幻覺。"
+    "desc": "如果你覺得這張紙聞起來香香的，那八成是某種幻覺。"
   },
   {
     "id": "brown",
@@ -26,5 +26,12 @@
     "src": "papers/BeigeBrown.png",
     "left": 0,
     "desc": "覺得自己不夠酷嗎？那鐵定是少了牛皮紙的勁爆質感！"
+  },
+  {
+    "id": "blue",
+    "label": "藍色",
+    "src": "papers/BluePoster.png",
+    "left": 0,
+    "desc": "為這裡增添一點睪固酮的時間到了！"
   }
 ]
