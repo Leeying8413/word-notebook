@@ -79,6 +79,11 @@
       "word": "詞彙"
     },
     {
+      "src": "cards/010-1.png",
+      "name": "角色名",
+      "word": "詞彙"
+    },
+    {
       "src": "cards/011.png",
       "name": "角色名",
       "word": "詞彙"
@@ -95,6 +100,31 @@
     },
     {
       "src": "cards/014.png",
+      "name": "角色名",
+      "word": "詞彙"
+    },
+    {
+      "src": "cards/015.png",
+      "name": "角色名",
+      "word": "詞彙"
+    },
+    {
+      "src": "cards/016.png",
+      "name": "角色名",
+      "word": "詞彙"
+    },
+    {
+      "src": "cards/017.png",
+      "name": "角色名",
+      "word": "詞彙"
+    },
+    {
+      "src": "cards/018.png",
+      "name": "角色名",
+      "word": "詞彙"
+    },
+    {
+      "src": "cards/019.png",
       "name": "角色名",
       "word": "詞彙"
     }
